@@ -1,4 +1,4 @@
-Функция paintTree
+Функция paintDom
 пример работы:
 
 <p align="center">
