@@ -1,3 +1,4 @@
+//BlockNote.cpp
 #include "BlockNote.h"
 #include "Note.h"
 
@@ -12,8 +13,8 @@ BlockNote::BlockNote(Note a1, Note a2, Note a3, Note a4, Note a5, Note a6, Note 
     Arr[7] = a8;
 }
 Note* BlockNote::find(std::string name) {
-    for (auto n : Arr) {
-        if (n.Name == name) return &n;
+    for (int n = 0; n < 8;n++) {
+        if (Arr[n].Name == name) return &Arr[n];
     }
     std::cerr << "NOPE"<<std::endl;
     return new Note("","",1,1,1);
